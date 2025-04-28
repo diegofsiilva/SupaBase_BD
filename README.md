@@ -1,3 +1,4 @@
+```
 CREATE TABLE alunos(
   id serial primary key,
   nome varchar(50) not null,
@@ -42,3 +43,4 @@ SELECT a.nome AS aluno, c.nome AS curso, m.data_matricula
 FROM matriculas m
 JOIN alunos a ON m.aluno_id = a.id
 JOIN cursos c ON m.curso_id = c.id;
+```
